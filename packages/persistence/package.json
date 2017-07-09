@@ -1,6 +1,6 @@
 {
   "name": "@micro-services/persistence",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Persistence Service",
   "main": "lib/index.js",
   "scripts": {
@@ -41,7 +41,7 @@
     "webpack": "^3.0.0"
   },
   "dependencies": {
-    "@micro-services/core": "^0.0.1"
+    "@micro-services/core": "^0.0.2"
   },
   "typings": "lib/index.d.ts",
   "typescript": {

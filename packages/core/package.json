@@ -1,6 +1,6 @@
 {
   "name": "@micro-services/core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Helper core for higher packages to depend on",
   "main": "lib/index.js",
   "scripts": {
