@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": false,
+    "pretty": true,
+    "removeComments": true,
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "types": [
+      "@types/node"
+    ]
+  }
+}

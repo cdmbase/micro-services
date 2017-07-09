@@ -1,0 +1,47 @@
+{
+  "name": "@micro-services/core",
+  "version": "0.0.1",
+  "description": "Helper core for higher packages to depend on",
+  "main": "lib/index.js",
+  "scripts": {
+    "jest": "./node_modules/.bin/jest",
+    "test": "jest",
+    "test:debug": "npm test -- --runInBand",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build",
+    "watch": "npm run build:lib:watch",
+    "build": "npm run build:clean && npm run build:lib",
+    "build:clean": "rimraf lib",
+    "build:lib": "webpack",
+    "build:lib:watch": "npm run build:lib -- --watch"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "CDMBase LLC",
+  "license": "ISC",
+  "jest": {
+    "testEnvironment": "node",
+    "roots": [
+      "src"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/../../node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/__tests__/.*test*\\.(ts|tsx|js)$"
+  },
+  "devDependencies": {
+    "jest": "^20.0.3",
+    "rimraf": "^2.6.1",
+    "webpack": "^3.0.0"
+  },
+  "typings": "lib/index.d.ts",
+  "typescript": {
+    "definition": "lib/index.d.ts"
+  }
+}

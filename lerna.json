@@ -1,0 +1,19 @@
+{
+  "lerna": "2.0.0-rc.5",
+  "changelog": {
+    "repo": "cdmbase/lerna-bootstrap",
+    "labels": {
+      "tag: breaking change": ":boom: Breaking Change",
+      "tag: new feature": ":rocket: New Feature",
+      "tag: bug fix": ":bug: Bug Fix",
+      "tag: polish": ":nail_care: Polish",
+      "tag: documentation": "Documentation",
+      "tag: internal": ":house: Internal"
+    }
+  },
+  "commands": {},
+  "packages": [
+    "packages/*"
+  ],
+  "version": "0.0.1"
+}
